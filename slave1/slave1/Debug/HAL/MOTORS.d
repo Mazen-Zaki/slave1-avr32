@@ -1,5 +1,5 @@
-APP/slave1.d APP/slave1.o: ../APP/slave1.c ../APP/../MCAL/TIMER0.h \
- ../APP/../MCAL/../INC/micro_config.h \
+HAL/MOTORS.d HAL/MOTORS.o: ../HAL/MOTORS.c ../HAL/MOTORS.h \
+ ../HAL/../INC/micro_config.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/avr/io.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/avr/sfr_defs.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/inttypes.h \
@@ -15,19 +15,14 @@ APP/slave1.d APP/slave1.o: ../APP/slave1.c ../APP/../MCAL/TIMER0.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/util/delay.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/util/delay_basic.h \
  c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/math.h \
- ../APP/../MCAL/../INC/std_types.h ../APP/../MCAL/../INC/common_macros.h \
- ../APP/../MCAL/uart.h ../APP/../HAL/ENCODER.h \
- ../APP/../HAL/../INC/micro_config.h ../APP/../HAL/../INC/std_types.h \
- ../APP/../HAL/../INC/common_macros.h ../APP/../HAL/MOTORS.h \
- ../APP/../HAL/../MCAL/EXTI0.h \
- ../APP/../HAL/../MCAL/../INC/micro_config.h \
- ../APP/../HAL/../MCAL/../INC/std_types.h \
- ../APP/../HAL/../MCAL/../INC/common_macros.h \
- ../APP/../HAL/../MCAL/EXTI1.h ../APP/../HAL/ENCODER.h
+ ../HAL/../INC/std_types.h ../HAL/../INC/common_macros.h \
+ ../HAL/../MCAL/EXTI0.h ../HAL/../MCAL/../INC/micro_config.h \
+ ../HAL/../MCAL/../INC/std_types.h ../HAL/../MCAL/../INC/common_macros.h \
+ ../HAL/../MCAL/EXTI1.h ../HAL/ENCODER.h
 
-../APP/../MCAL/TIMER0.h:
+../HAL/MOTORS.h:
 
-../APP/../MCAL/../INC/micro_config.h:
+../HAL/../INC/micro_config.h:
 
 c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/avr/io.h:
 
@@ -59,30 +54,18 @@ c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.
 
 c:\program\ files\ (x86)\atmel\atmel\ studio\ 6.0\extensions\atmel\avrgcc\3.4.1.95\avrtoolchain\bin\../lib/gcc/avr/4.6.2/../../../../avr/include/math.h:
 
-../APP/../MCAL/../INC/std_types.h:
+../HAL/../INC/std_types.h:
 
-../APP/../MCAL/../INC/common_macros.h:
+../HAL/../INC/common_macros.h:
 
-../APP/../MCAL/uart.h:
+../HAL/../MCAL/EXTI0.h:
 
-../APP/../HAL/ENCODER.h:
+../HAL/../MCAL/../INC/micro_config.h:
 
-../APP/../HAL/../INC/micro_config.h:
+../HAL/../MCAL/../INC/std_types.h:
 
-../APP/../HAL/../INC/std_types.h:
+../HAL/../MCAL/../INC/common_macros.h:
 
-../APP/../HAL/../INC/common_macros.h:
+../HAL/../MCAL/EXTI1.h:
 
-../APP/../HAL/MOTORS.h:
-
-../APP/../HAL/../MCAL/EXTI0.h:
-
-../APP/../HAL/../MCAL/../INC/micro_config.h:
-
-../APP/../HAL/../MCAL/../INC/std_types.h:
-
-../APP/../HAL/../MCAL/../INC/common_macros.h:
-
-../APP/../HAL/../MCAL/EXTI1.h:
-
-../APP/../HAL/ENCODER.h:
+../HAL/ENCODER.h:

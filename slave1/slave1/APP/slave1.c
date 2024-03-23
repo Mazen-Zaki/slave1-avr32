@@ -9,9 +9,17 @@
 #include "../MCAL/uart.h"
 
 #include "../HAL/ENCODER.h"
+#include "../HAL/MOTORS.h"
+
 
 #define NUMBER_OF_OVERFLOWS_PER_SECOND 4
-#define BufferSize 7
+#define BufferSize 8
+
+
+
+void CheckForCommand();
+
+
 
 u8 flag_harvestingProcess = 0;
 
@@ -21,7 +29,7 @@ u8 g_tick = 0;
 /* UART Global Variables */
 u8 flag_startBuffer = 0;
 u8 flag_newBufferComplete = 0;
-u8 recivedBuffer[7];
+u8 recivedBuffer[BufferSize];
 u8 bufferCounter = 0;
 
 
@@ -84,7 +92,8 @@ int main(void)
 {
 	TIMER0_init_CTC_mode();
 	UART_init();
-	Encoder_Init();
+	MOTORS_Init();
+	
 	
     while(1)
     {
@@ -101,7 +110,14 @@ void CheckForCommand()
 {
 	if (recivedBuffer[1] == 'C')
 	{
+		u8 temp[4];
 		
+		temp[0] = recivedBuffer[4];
+		temp[1] = recivedBuffer[5];
+		temp[2] = recivedBuffer[6];
+		temp[3] = recivedBuffer[7];
+		
+		MOTORS_ControlCommand(temp);
 	}
 	else if (recivedBuffer[1] == 'N')
 	{

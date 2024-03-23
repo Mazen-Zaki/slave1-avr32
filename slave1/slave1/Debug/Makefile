@@ -41,10 +41,12 @@ SUBDIRS :=  \
 C_SRCS +=  \
 ../APP/slave1.c \
 ../HAL/ENCODER.c \
+../HAL/MOTORS.c \
 ../HAL/MPU6050.c \
 ../MCAL/EXTI0.c \
 ../MCAL/EXTI1.c \
 ../MCAL/i2c.c \
+../MCAL/PWM.c \
 ../MCAL/TIMER0.c \
 ../MCAL/uart.c
 
@@ -58,10 +60,12 @@ ASM_SRCS +=
 OBJS +=  \
 APP/slave1.o \
 HAL/ENCODER.o \
+HAL/MOTORS.o \
 HAL/MPU6050.o \
 MCAL/EXTI0.o \
 MCAL/EXTI1.o \
 MCAL/i2c.o \
+MCAL/PWM.o \
 MCAL/TIMER0.o \
 MCAL/uart.o
 
@@ -69,10 +73,12 @@ MCAL/uart.o
 OBJS_AS_ARGS +=  \
 APP/slave1.o \
 HAL/ENCODER.o \
+HAL/MOTORS.o \
 HAL/MPU6050.o \
 MCAL/EXTI0.o \
 MCAL/EXTI1.o \
 MCAL/i2c.o \
+MCAL/PWM.o \
 MCAL/TIMER0.o \
 MCAL/uart.o
 
@@ -80,10 +86,12 @@ MCAL/uart.o
 C_DEPS +=  \
 APP/slave1.d \
 HAL/ENCODER.d \
+HAL/MOTORS.d \
 HAL/MPU6050.d \
 MCAL/EXTI0.d \
 MCAL/EXTI1.d \
 MCAL/i2c.d \
+MCAL/PWM.d \
 MCAL/TIMER0.d \
 MCAL/uart.d
 
@@ -91,10 +99,12 @@ MCAL/uart.d
 C_DEPS_AS_ARGS +=  \
 APP/slave1.d \
 HAL/ENCODER.d \
+HAL/MOTORS.d \
 HAL/MPU6050.d \
 MCAL/EXTI0.d \
 MCAL/EXTI1.d \
 MCAL/i2c.d \
+MCAL/PWM.d \
 MCAL/TIMER0.d \
 MCAL/uart.d
 
@@ -108,6 +118,10 @@ ADDITIONAL_DEPENDENCIES:=
 OUTPUT_FILE_DEP:= ./makedep.mk
 
 # AVR32/GNU C Compiler
+
+
+
+
 
 
 

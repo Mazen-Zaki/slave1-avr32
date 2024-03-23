@@ -93,6 +93,12 @@
     <Compile Include="HAL\ENCODER.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="HAL\MOTORS.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\MOTORS.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="HAL\MPU6050.c">
       <SubType>compile</SubType>
     </Compile>
@@ -124,6 +130,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\i2c.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PWM.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\PWM.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\TIMER0.c">
