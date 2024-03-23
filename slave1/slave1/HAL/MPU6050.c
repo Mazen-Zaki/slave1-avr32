@@ -130,8 +130,8 @@ void MPU6050_Read_All(MPU6050_t *DataStruct)
     DataStruct->Gz = DataStruct->Gyro_Z_RAW / 131.0;
 
     // Kalman angle solve
-    /* using Timer0 to get a tick value in millisecond */
-    f64 dt = (f64) (TIMER0_GetTick() - timer) / 1000;
+    /* using Timer0 to get a tick value in Seconds */
+    f64 dt = (f64) (TIMER0_GetTick() - timer);
     timer = TIMER0_GetTick();
     f64 roll;
     f64 roll_sqrt = sqrt(

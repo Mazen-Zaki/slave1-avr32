@@ -87,6 +87,12 @@
     <Compile Include="APP\slave1.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="HAL\ENCODER.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="HAL\ENCODER.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="HAL\MPU6050.c">
       <SubType>compile</SubType>
     </Compile>
@@ -102,6 +108,18 @@
     <Compile Include="INC\STD_TYPES.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="MCAL\EXTI0.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTI0.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTI1.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\EXTI1.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="MCAL\i2c.c">
       <SubType>compile</SubType>
     </Compile>
@@ -112,6 +130,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="MCAL\TIMER0.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\uart.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="MCAL\uart.h">
       <SubType>compile</SubType>
     </Compile>
   </ItemGroup>
